@@ -1,0 +1,24 @@
+h1 {
+    font-family: Garamond, serif;
+    font-size: 3rem;
+    color: #5c1010;
+}
+
+h2 {
+    font-family: Garamond, serif;
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+}
+
+p {
+   color:#636363;
+   margin-top: 0.3rem;
+}
+
+body {
+    background-color: #f7f1e3;
+}
+
+section {
+    background-color: #f5e6e6;
+}
