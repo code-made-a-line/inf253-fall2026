@@ -1,0 +1,93 @@
+body{
+    background-color: #F5F3E8;
+}
+
+h1{
+    font-family: Garamond, serif;
+    font-size: 3rem;
+    color: #306565;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2{
+    font-family: Garamond, serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #404B2A;
+    font-style: normal;
+}
+
+h3{
+    font-family: Garamond, serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #378F9A;
+    font-style: normal;
+}
+
+ul{
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    font-weight: 200;
+    color: #1E2E2C;
+    font-style: normal;
+}
+
+p{
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    font-weight: 200;
+    color: #1E2E2C;
+    font-style: normal;
+}
+
+#img1{
+    width: 30rem;
+    border: 5px solid #306565;
+}
+
+.attribution{
+    color: grey;
+    font-style: italic;
+}
+
+.attribution a{
+    color: grey;
+}
+
+a{
+    color: #378F9A;
+}
+
+#internal-link-redirect{
+    background-color: #d7c8c8;
+    width: 150px;
+}
+
+header{
+    height: 100px;
+    margin: 10px;
+    padding: 25px;
+    border: 5px solid black;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-section{
+    width: 200px;
+    margin: 10px;
+    padding: 25px;
+    border: 2px solid #306565;
+    border-radius: 6px;
+}
+
+#intro{
+    margin-left: auto;
+}
+
+#discography{
+    background: #d7b66e;
+    margin-left: auto;
+}
