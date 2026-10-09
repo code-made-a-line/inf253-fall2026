@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercise 7</title>
+    </head>
+
+  <body>
+
+    <h1>Library Programs</h1>
+
+    <table>
+        <caption>Upcoming Programs</caption>
+        <thead>
+            <tr>
+                <th scope="col">Program</th>
+                <th scope="col">Date</th>
+                <th scope="col">Time</th>
+                <th scope="col">Location</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Book Club</td>
+                <td>Oct. 8</td>
+                <td>6:30 PM</td>
+                <td>Room A</td>
+            </tr>
+            <tr>
+                <td>Story Time</td>
+                <td>Oct. 10</td>
+                <td>10:00 AM</td>
+                <td>Children's</td>
+            </tr>
+            <tr>
+                <td>Genealogy</td>
+                <td>Oct. 12</td>
+                <td>2:00 PM</td>
+                <td>Room B</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Register for a Program</h2>
+    <form>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Name" required>
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Email" required>
+      </div>
+
+      <div>
+        <label for="program">Program</label>
+        <select name="program" required>
+          <option value="">Select a program</option>
+          <option value="book-club">Book Club</option>
+          <option value="story-time">Story Time</option>
+          <option value="genealogy">Genealogy</option>
+        </select>
+      </div>
+
+      <div>
+        <input type="radio" id="in-person" value="in-person" name="in-person" required>
+        <label for="in-person">In Person</label>
+      </div>
+
+      <div>
+        <input type="radio" id="online" value="online" name="in-person" required>
+        <label for="online">Online</label>
+      </div>
+
+      <div>
+        <button type="submit">Register</button>
+      </div>
+  
+    </form>
+
+    <p>Questions? 
+      <br> 
+      Contact the library... 
+    </p>
+
+  </body>
+</html>
