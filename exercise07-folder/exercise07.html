@@ -4,87 +4,134 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Exercise 7</title>
-    </head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Rum+Raisin&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style-ex-7.css" />
+  </head>
 
   <body>
 
-    <h1>Library Programs</h1>
+    <div id="header-nav-container">
+      <header id="header">
+        <h1>Mado's Library Programs</h1>
+        <p>Community events, workshops, and activities</p>
+      </header>
 
-    <table>
-        <caption>Upcoming Programs</caption>
-        <thead>
-            <tr>
-                <th scope="col">Program</th>
-                <th scope="col">Date</th>
-                <th scope="col">Time</th>
-                <th scope="col">Location</th>
-            </tr>
-        </thead>
+      <nav id="top-right-nav">
+        <ul>
+          <li><a href="exercise07.html">Home</a></li>
+          <li><a href="">Programs</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
 
-        <tbody>
-            <tr>
-                <td>Book Club</td>
-                <td>Oct. 8</td>
-                <td>6:30 PM</td>
-                <td>Room A</td>
-            </tr>
-            <tr>
-                <td>Story Time</td>
-                <td>Oct. 10</td>
-                <td>10:00 AM</td>
-                <td>Children's</td>
-            </tr>
-            <tr>
-                <td>Genealogy</td>
-                <td>Oct. 12</td>
-                <td>2:00 PM</td>
-                <td>Room B</td>
-            </tr>
-        </tbody>
-    </table>
 
-    <h2>Register for a Program</h2>
-    <form>
-      <div>
-        <label for="name">Name</label>
-        <input type="text" name="name" placeholder="Name" required>
-      </div>
+    
+    <main id="main-content-container">
 
-      <div>
-        <label for="email">Email</label>
-        <input type="email" name="email" placeholder="Email" required>
-      </div>
+      <div id="program-info">
+      <table>
+          <caption><h2>Upcoming Programs</h2></caption>
+          <thead>
+              <tr>
+                  <th scope="col">Program</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Time</th>
+                  <th scope="col">Location</th>
+              </tr>
+          </thead>
 
-      <div>
-        <label for="program">Program</label>
-        <select name="program" required>
-          <option value="">Select a program</option>
-          <option value="book-club">Book Club</option>
-          <option value="story-time">Story Time</option>
-          <option value="genealogy">Genealogy</option>
-        </select>
-      </div>
+          <tbody>
+              <tr>
+                  <td>Book Club</td>
+                  <td>Oct. 8</td>
+                  <td>6:30 PM</td>
+                  <td>Room A</td>
+              </tr>
+              <tr>
+                  <td>Story Time</td>
+                  <td>Oct. 10</td>
+                  <td>10:00 AM</td>
+                  <td>Children's</td>
+              </tr>
+              <tr>
+                  <td>Genealogy</td>
+                  <td>Oct. 12</td>
+                  <td>2:00 PM</td>
+                  <td>Room B</td>
+              </tr>
+              <tr>
+                <td>Intro to 3D Printing</td>
+                <td>Oct. 15</td>
+                <td>6:00 PM</td>
+                <td>Makerspace</td>
+              </tr>
+          </tbody>
+      </table>
+    
+      <section id="program-descriptions">
+        <h2>About these Programs</h2>
+          <div id="program-descriptions-text">
+            <p>The programs listed above are designed to engage our community in various activities and learning opportunities. Whether you're interested in reading, storytelling, or genealogical research, there's something for everyone.</p>
+            <p>Be on the lookout for more programs and events! Questions? Contact us at info@madolibrary.com</p>
+          </div>
+      </section>
+    </div>
 
-      <div>
-        <input type="radio" id="in-person" value="in-person" name="in-person" required>
-        <label for="in-person">In Person</label>
-      </div>
+    <div id="program-registration-container">
 
-      <div>
-        <input type="radio" id="online" value="online" name="in-person" required>
-        <label for="online">Online</label>
-      </div>
+      <h2>Register</h2>
+      <p>Choose a program to attend.</p>
 
-      <div>
-        <button type="submit">Register</button>
-      </div>
-  
-    </form>
+      <form id="program-registration-form">
+        <div>
+          <label for="name" id="name-label">Name</label>
+          <input type="text" name="name" placeholder="Your Name" required>
+        </div>
 
-    <p>Questions? 
-      <br> 
-      Contact the library... 
-    </p>
+        <div>
+          <label for="email" id="email-label">Email</label>
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </div>
 
+        <div>
+          <label for="program" id="program-label">Program</label>
+          <select name="program" required>
+            <option value="">Select a program</option>
+            <option value="book-club">Book Club</option>
+            <option value="story-time">Story Time</option>
+            <option value="genealogy">Genealogy</option>
+            <option value="3d-printing">Intro to 3D Printing</option>
+          </select>
+        </div>
+
+        <label for="in-person" id="in-person-label">Attendance</label>
+        <div>
+          <input type="radio" id="in-person" value="in-person" name="in-person" required>
+          <label for="in-person">In Person</label>
+        </div>
+
+        <div>
+          <input type="radio" id="online" value="online" name="in-person" required>
+          <label for="online">Online</label>
+        </div>
+
+        <div>
+          <button type="submit">Register</button>
+        </div>
+    
+      </form>
+    </div>
+  </main>
+
+    <footer id="footer-container">
+      <p id="footer-info-top">Mado's Library . 123 Main Street, Anytown, USA . (312) 123-4567 . 9:00 AM - 5:00 PM</p>
+      <p id="footer-info-bottom">footer links / accessibility / privacy policy / social media</p>
+    </footer>
   </body>
 </html>
