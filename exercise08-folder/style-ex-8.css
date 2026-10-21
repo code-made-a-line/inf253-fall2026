@@ -1,0 +1,187 @@
+p{
+    font-family: PT Sans, sans-serif;
+}
+
+body{
+    background-color: #fffae3;
+}
+
+#header-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #fffae3;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #1F6CB0;
+    color: white;
+    font-family: Rum Raisin, sans-serif;
+    letter-spacing: 2px;
+}
+
+#header-nav-container h1 {
+    margin-bottom: .25rem;
+    font-size: 2rem;
+}
+
+#header-nav-container p {
+    margin-top: 0;
+}
+
+#top-right-nav ul {
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    list-style: none;
+    padding: 1rem;
+    background-color: white;
+    color: #1F6CB0;
+    text-transform: uppercase;
+}
+
+#top-right-nav a {
+    text-decoration: none;
+    color: #1F6CB0;
+}
+
+#top-right-nav a:hover {
+    color: #D3D3D3;
+    text-decoration: underline;
+}
+
+#main-content-container {
+    display: flex;
+    margin-top: 1.5rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+h2{
+    font-family: PT Sans, sans-serif;
+}
+
+#program-info{
+    border: 2px solid #1F6CB0;
+    padding: 1rem;
+    flex: 2;
+}
+
+#program-descriptions-text{
+    border: 2px solid #1F6CB0;
+    background-color: #f4d35e;
+    padding: 1rem;
+}
+
+#program-registration-container {
+    border: 2px solid #1F6CB0;
+    padding: 1rem;
+    flex: 1;
+    background-color: #f4d35e;
+    text-align: left;
+    font-family: PT Sans, sans-serif;
+}
+
+#program-registration-container h2{
+    margin-bottom: .25rem;
+}
+
+#program-registration-container p{
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+#program-registration-form{
+    font-family: PT Sans, sans-serif;
+}
+
+#program-registration-form input[type="text"], input[type="email"], select, option{
+    width: 95%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: PT Sans, sans-serif;
+}
+
+input[type="radio"]{
+    margin-right: 0.5rem;
+}
+
+input:focus, select:focus{
+    outline: 2px solid #1F6CB0;
+}
+
+
+#name-label, #email-label, #program-label, #in-person-label, button{
+    font-weight: bold;
+    font-family: PT Sans, sans-serif;
+}
+
+button{
+    background-color: #1F6CB0;
+    color: white;
+    padding: 0.5rem 2rem;
+    margin-top: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #D3D3D3;
+    color: #1F6CB0;
+}
+
+table {
+    border: 2px solid #1F6CB0;
+    width: 100%;
+    border-collapse: collapse;
+    font-family: PT Sans, sans-serif;
+}
+
+caption {
+    text-align: left;
+}
+
+table, th, td {
+    border: 1.5px solid #1F6CB0;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+}
+
+th{
+    background-color: #f4d35e;
+}
+
+#footer-container{
+    border: 2px solid #1F6CB0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 1.5rem;
+    background-color: #1F6CB0;
+    color: white;
+}
+
+#footer-info-top{
+    margin-bottom: .25rem;
+}
+
+#footer-info-bottom{
+    margin-top: 0;
+}
+
+
+/* phone */
+@media all and (min-width: 375px){
+
+}
+
+/* tablet */
+@media all and (min-width: 768px){
+
+}
+    
+/* desktop */
+@media all and (min-width: 1200px){
+
+}
