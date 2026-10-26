@@ -110,7 +110,7 @@ input:focus, select:focus{
 }
 
 
-#name-label, #email-label, #program-label, #in-person-label, button{
+#name-label, #email-label, #program-label, #in-person-label, #attendance-label, button{
     font-weight: bold;
     font-family: PT Sans, sans-serif;
 }
