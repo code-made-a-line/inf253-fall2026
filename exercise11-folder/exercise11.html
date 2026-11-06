@@ -43,6 +43,7 @@
                   <th scope="col">Date</th>
                   <th scope="col">Time</th>
                   <th scope="col">Location</th>
+                  <th scope="col">Details</th>
               </tr>
           </thead>
 
@@ -52,33 +53,52 @@
                   <td>Oct. 8</td>
                   <td>6:30 PM</td>
                   <td>Room A</td>
+                  <td><button type="button" class="details-button" data-target="book-club">View Details</button></td>
               </tr>
               <tr>
                   <td>Story Time</td>
                   <td>Oct. 10</td>
                   <td>10:00 AM</td>
                   <td>Children's</td>
+                  <td><button type="button" class="details-button" data-target="story-time">View Details</button></td>
               </tr>
               <tr>
                   <td>Genealogy</td>
                   <td>Oct. 12</td>
                   <td>2:00 PM</td>
                   <td>Room B</td>
+                  <td><button type="button" class="details-button" data-target="genealogy">View Details</button></td>
               </tr>
               <tr>
                 <td>Intro to 3D Printing</td>
                 <td>Oct. 15</td>
                 <td>6:00 PM</td>
                 <td>Makerspace</td>
+                <td><button type="button" class="details-button" data-target="3d-printing">View Details</button></td>
               </tr>
           </tbody>
       </table>
     
       <section id="program-descriptions">
-        <h2>About these Programs</h2>
+        <h2>Program Details</h2>
           <div id="program-descriptions-text">
-            <p>The programs listed above are designed to engage our community in various activities and learning opportunities. Whether you're interested in reading, storytelling, or genealogical research, there's something for everyone.</p>
-            <p>Be on the lookout for more programs and events! Questions? Contact us at info@madolibrary.com</p>
+            <p id="default-text">Select a program from the table above to view its details and learn more!</p>
+            <div id="book-club" class="program-details" hidden>
+              <h3>Book Club</h3>
+              <p>Join our monthly book club to discuss the latest bestsellers and classic literature. All are welcome!</p>
+            </div>
+            <div id="story-time" class="program-details" hidden>
+              <h3>Story Time</h3>
+              <p>Join us for a fun-filled hour of storytelling and activities for children of all ages!</p>
+            </div>
+            <div id="genealogy" class="program-details" hidden>
+              <h3>Genealogy</h3>
+              <p>Learn how to research your family history and discover the stories of your ancestors. For ages 12 and up.</p>
+            </div>
+            <div id="3d-printing" class="program-details" hidden>
+              <h3>Intro to 3D Printing</h3>
+              <p>Get hands-on experience with 3D printing technology and learn how to design your own creations. For ages 12 and up.</p>
+            </div>
           </div>
       </section>
     </div>
