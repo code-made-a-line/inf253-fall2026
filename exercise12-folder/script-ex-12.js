@@ -19,3 +19,19 @@ buttons.forEach(function(button){
     });
 });
 
+const form = document.querySelector("#program-registration-form");
+const confirmationMessage = document.getElementById("program-confirmation");
+
+form.addEventListener("submit", function(event){
+    event.preventDefault();
+    
+    const name = document.getElementById("name").value;
+    const programOption = document.getElementById("program");
+    const program = programOption.options[programOption.selectedIndex].text;
+
+    const message = "Thank you, " + name + "!" + " You have been registered for the " + program + " program.";
+
+    confirmationMessage.textContent = message;
+
+    confirmationMessage.hidden = false;
+});

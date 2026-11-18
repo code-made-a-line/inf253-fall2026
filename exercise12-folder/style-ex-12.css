@@ -177,6 +177,24 @@ th{
     margin-top: 0;
 }
 
+#program-confirmation{
+    border: 2px solid #f4d35e;
+    padding: 1rem;
+    background-color: #1F6CB0;
+    text-align: center;
+    font-family: PT Sans, sans-serif;
+    color: white;
+    margin-top: 1rem;
+    animation: bounce .5s ease-in-out;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(-100%); }
+    50% { transform: translateY(10%); }
+    100% { transform: translateY(0); }
+}
+
+
 
 /* phone */
 @media all and (min-width: 375px){
